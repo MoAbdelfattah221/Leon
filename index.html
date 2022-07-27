@@ -15,56 +15,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <!-- font awesome -->
         <link rel="stylesheet" href="CSS/all.min.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <!-- shortcut icon -->
         <link rel="shortcut icon" href="images/logo.png">
         <title>Leon</title>
     </head>
-    <body>
+    <body class="text-capitalize">
         <!-- Start Header  -->
-        <div class="header">
-            <div class="container">
+        <div class="header p-4">
+            <div class="container d-flex justify-content-between align-items-center">
                 <a href="index.html"><img class="logo" src="images/logo.png" alt="logo" title="Home Page"></a>
-                <div class="links">
-                    <span class="icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="links position-relative">
+                    <span class="icon d-flex flex-wrap justify-content-end">
+                        <span class="mb-1 w-100"></span>
+                        <span class="mb-1"></span>
+                        <span class="w-100"></span>
                     </span>
-                    <ul>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
+                    <ul id="ul" class="position-absolute list-unstyled m-0 p-0 end-0 active">
+                        <li><a class="d-block p-3 text-decoration-none border-bottom" href="#services">services</a></li>
+                        <li><a class="d-block p-3 text-decoration-none border-bottom" href="#portfolio">portfolio</a></li>
+                        <li><a class="d-block p-3 text-decoration-none border-bottom" href="#about">about</a></li>
+                        <li><a class="d-block p-3 text-decoration-none" href="#contact">contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- End Header  -->
         <!-- start landing page  -->
-        <div class="landing">
-            <div class="intro-text">
-                <h1>hello there</h1>
-                <p>we are leon - super creative & minimal agency web template</p>
+        <div class="landing position-relative">
+            <div class="intro-text position-absolute top-50 start-50 text-center">
+                <h1 class="m-0 fw-bold">hello there</h1>
+                <p class="lh-lg">we are leon - super creative & minimal agency web template</p>
             </div>
         </div>
         <!-- end landing page  -->
         <!-- start features  -->
         <div class="features">
             <div class="container">
-                <div class="feat">
-                    <i class="fas fa-magic fa-3x"></i>
-                    <h3>tell us about your idea</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, aspernatur eos, at voluptatem aliquam accusamus reprehenderit corporis nam architecto</p>
-                </div>
-                <div class="feat">
-                    <i class="fas fa-gem fa-3x"></i>
-                    <h3>we will do all the work</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, aspernatur eos, at voluptatem aliquam accusamus reprehenderit corporis nam architecto</p>
-                </div>
-                <div class="feat">
-                    <i class="fas fa-globe-europe fa-3x"></i>
-                    <h3>your product is worldwide</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, aspernatur eos, at voluptatem aliquam accusamus reprehenderit corporis nam architecto</p>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 p-3 text-center">
+                        <i class="fas fa-magic fa-3x"></i>
+                        <h3 class="fw-bold my-4">tell us about <br> your idea</h3>
+                        <p class="text-secondary lh-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, aspernatur eos, at voluptatem aliquam accusamus reprehenderit corporis nam architecto</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-3 text-center">
+                        <i class="fas fa-gem fa-3x"></i>
+                        <h3 class="fw-bold my-4">we will do <br> all the work</h3>
+                        <p class="text-secondary lh-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, aspernatur eos, at voluptatem aliquam accusamus reprehenderit corporis nam architecto</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-3 text-center">
+                        <i class="fas fa-globe-europe fa-3x"></i>
+                        <h3 class="fw-bold my-4">your product is <br> worldwide</h3>
+                        <p class="text-secondary lh-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, aspernatur eos, at voluptatem aliquam accusamus reprehenderit corporis nam architecto</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,49 +79,51 @@
                 <h2 class="special-heading">services</h2>
                 <p class="special-paragraph">don't be busy,be productive</p>
                 <div class="services-content">
-                    <div class="col">
-                        <!-- start service one -->
-                        <div class="srv">
-                            <i class="fas fa-palette fa-2x"></i>
-                            <div class="text">
-                                <h3>graphic design</h3>
-                                <p>graphic design is the process of visual communication and problem-solving using one or more of typography , photography and illustration.</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!-- start service one -->
+                            <div class="srv d-flex mb-5">
+                                <i class="fas fa-palette fa-2x"></i>
+                                <div class="text">
+                                    <h3>graphic design</h3>
+                                    <p class="lh-lg">graphic design is the process of visual communication and problem-solving using one or more of typography.</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- end service one -->
-                        <!-- start service two -->
-                        <div class="srv">
-                            <i class="fab fa-sketch fa-2x"></i>
-                            <div class="text">
-                                <h3>UI & UX</h3>
-                                <p>process of enhancing user satisfaction with a product by improving the usability , accessibility and pleasure provided in the interaction.</p>
+                            <!-- end service one -->
+                            <!-- start service two -->
+                            <div class="srv d-flex mb-5">
+                                <i class="fab fa-sketch fa-2x"></i>
+                                <div class="text">
+                                    <h3>UI & UX</h3>
+                                    <p class="lh-lg">process of enhancing user satisfaction with a product by improving the usability , accessibility and pleasure provided in the interaction.</p>
+                                </div>
                             </div>
+                            <!-- end service two -->
                         </div>
-                        <!-- end service two -->
-                    </div>
-                    <div class="col">
-                        <!-- start service three -->
-                        <div class="srv">
-                            <i class="fas fa-vector-square fa-2x"></i>
-                            <div class="text">
-                                <h3>web design</h3>
-                                <p>web design encompasses many differnet skills and disciplines in the production and maintenance of websites.</p>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!-- start service three -->
+                            <div class="srv d-flex mb-5">
+                                <i class="fas fa-vector-square fa-2x"></i>
+                                <div class="text">
+                                    <h3>web design</h3>
+                                    <p class="lh-lg">web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- end service three -->
-                        <!-- start service four -->
-                        <div class="srv">
-                            <i class="fas fa-pencil-ruler fa-2x"></i>
-                            <div class="text">
-                                <h3>web development</h3>
-                                <p>web development is a broad term for the work involved in developing a web site for the internet or an internet.</p>
+                            <!-- end service three -->
+                            <!-- start service four -->
+                            <div class="srv d-flex mb-5">
+                                <i class="fas fa-pencil-ruler fa-2x"></i>
+                                <div class="text">
+                                    <h3>web development</h3>
+                                    <p class="lh-lg">web development is a broad term for the work involved in developing a web site for the internet or an internet.</p>
+                                </div>
                             </div>
+                            <!-- end service four -->
                         </div>
-                        <!-- end service four -->
-                    </div>
-                    <div class="col">
-                        <div class="image">
-                            <img src="images/2808.jpg" alt="switzerland">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="image position-relative text-center">
+                                <img class="mw-100" src="images/2808.jpg" alt="switzerland">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,26 +135,26 @@
             <div class="container">
                 <h2 class="special-heading">portfolio</h2>
                 <p class="special-paragraph">if you do it right,it will last for ever</p>
-                <div class="portfolio-content">
-                    <div class="card">
-                        <img src="images/paris.jfif" alt="">
-                        <div class="info">
-                            <h3>projuct here</h3>
-                            <p>my creative abillity is very difficult to measure because it can mainfest in so many surprising</p>
+                <div class="row">
+                    <div class="card col-12 col-sm-6 col-lg-4 p-0 rounded">
+                        <img class="w-100 mw-100" src="images/paris.jfif" alt="">
+                        <div class="info p-4">
+                            <h3 class="m-0 mb-2">project here</h3>
+                            <p class="lh-base text-secondary">my creative ability is very difficult to measure because it can manifest in so many surprising</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/paris.jfif" alt="">
-                        <div class="info">
-                            <h3>projuct here</h3>
-                            <p>my creative abillity is very difficult to measure because it can mainfest in so many surprising</p>
+                    <div class="card col-12 col-sm-6 col-lg-4 p-0  rounded">
+                        <img class="w-100 mw-100" src="images/paris.jfif" alt="">
+                        <div class="info p-4">
+                            <h3 class="m-0 mb-2">project here</h3>
+                            <p class="lh-base text-secondary">my creative ability is very difficult to measure because it can manifest in so many surprising</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/paris.jfif" alt="">
-                        <div class="info">
-                            <h3>projuct here</h3>
-                            <p>my creative abillity is very difficult to measure because it can mainfest in so many surprising</p>
+                    <div class="card col-12 col-sm-6 col-lg-4 p-0 rounded">
+                        <img class="w-100 mw-100" src="images/paris.jfif" alt="">
+                        <div class="info p-4">
+                            <h3 class="m-0 mb-2">project here</h3>
+                            <p class="lh-base text-secondary">my creative ability is very difficult to measure because it can manifest in so many surprising</p>
                         </div>
                     </div>
                 </div>
@@ -160,14 +166,14 @@
             <div class="container">
                 <h2 class="special-heading">about</h2>
                 <p class="special-paragraph">less is more work</p>
-                <div class="about-content">
-                    <div class="image">
-                        <img src="images/pexels-photo-674010.jpeg" alt="">
+                <div class="about-content d-flex flex-wrap justify-content-between">
+                    <div class="image position-relative">
+                        <img class="w-100 h-100" src="images/pexels-photo-674010.jpeg" alt="">
                     </div>
                     <div class="text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, quam voluptatibus! Sunt debitis asperiores adipisci aspernatur tempore odit assumenda ullam nemo temporibus nobis perspiciatis tenetur, hic consequatur nesciunt facere ad! </p>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error culpa, vitae fugit nihil dolore unde voluptatibus vero quaerat nemo delectus illo dolorum, vel reprehenderit quae ad, debitis voluptas repudiandae aperiam?</p>
+                        <p class="fw-bold lh-lg mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, quam voluptatibus! Sunt debitis asperiores adipisci aspernatur tempore odit assumenda ullam nemo temporibus nobis perspiciatis tenetur, hic consequatur nesciunt facere ad! </p>
+                        <hr class="w-50 d-inline-block">
+                        <p class="fw-bold lh-lg text-secondary mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error culpa, vitae fugit nihil dolore unde voluptatibus vero quaerat nemo delectus illo dolorum, vel reprehenderit quae ad, debitis voluptas repudiandae aperiam?</p>
                     </div>
                 </div>
             </div>
@@ -177,14 +183,14 @@
         <div class="contact" id="contact">
             <div class="container">
                 <h3 class="special-heading">contact</h3>
-                <p class="special-paragraph">we are born to creat</p>
-                <div class="info">
-                    <p class="label">feel free to drop us a line at :</p>
-                    <a href="mailto:moabdelfattah221@gmail.com" class="link">moabdelfattah221@gmail.com</a>
-                    <div class="social">
+                <p class="special-paragraph">we are born to create</p>
+                <div class="info text-center">
+                    <p class="label mb-2 fw-bold">feel free to drop us a line at :</p>
+                    <a class="fw-bold d-block text-decoration-none" href="mailto:moabdelfattah221@gmail.com">moabdelfattah221@gmail.com</a>
+                    <div class="social mt-2 d-flex justify-content-center align-items-center">
                         find us on social network
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube mx-2"></i>
+                        <i class="fab fa-facebook me-2"></i>
                         <i class="fab fa-twitter"></i>
                     </div>
                 </div>
@@ -192,29 +198,13 @@
         </div>
         <!-- end contact -->
         <!-- start footer  -->
-        <div class="footer">
+        <div class="footer text-center py-4 px-2">
             <div class="container">
-                <p>&copy;2022 - <span>leon</span> , all right reserved</p>
+                <p class="text-light">&copy;2022 - <span class="fw-bold">leon</span> made with <i class="fa-solid fa-heart"></i> by <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=100077184805922" target="_blank">mohamed abdelfattah</a></p>
             </div>
         </div>
         <!-- end footer  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
